@@ -184,7 +184,7 @@ def load_models_and_scaler():
 # Main Streamlit app
 def main():
     st.title("Neural Network Model Demo")
-    
+    st.header("Nvidia Stock Price Prediction Test")
     # Check if models exist, if not train them
     if not os.path.exists('models/random_forest_model.pkl'):
         st.write("Training models... This may take a moment.")
@@ -205,7 +205,7 @@ def main():
     )
     
     # Input form
-    st.header("Enter Stock Data")
+    st.subheader("Enter Stock Data")
     with st.form("prediction_form"):
         col1, col2 = st.columns(2)
         
@@ -251,7 +251,6 @@ def main():
             st.write(f"RMSE: {results[model_name]['RMSE']:.2f}")
             st.write(f"R2 Score: {results[model_name]['R2']:.4f}")
     
-    # ลบส่วนการพล็อตกราฟออก
 
 if __name__ == "__main__":
     # Train models if not exists and run app
