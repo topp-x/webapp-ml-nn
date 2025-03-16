@@ -7,7 +7,9 @@ Web Application for Machine Learning and Neural Network
 🚀 วิธีการติดตั้งและใช้งาน
 
 1️⃣ ติดตั้ง Dependencies
+
 pip install -r requirements.txt
 
 2️⃣ รันแอพพลิเคชัน
+
 streamlit run app.py
