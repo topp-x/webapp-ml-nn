@@ -205,7 +205,7 @@ def main():
     )
     
     # Input form
-    st.subheader("Enter Stock Data")
+    st.write("Enter Stock Data")
     with st.form("prediction_form"):
         col1, col2 = st.columns(2)
         
