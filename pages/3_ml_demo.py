@@ -33,7 +33,7 @@ except ImportError:
     has_matplotlib = False
 
 st.set_page_config(
-    page_title="ML Demo",
+    page_title="Machine Learning Demo",
     page_icon="🔬",
     layout="wide"
 )
@@ -440,15 +440,14 @@ which contains patient data from several hospitals.
 st.subheader("Sample Data Used for Model Training")
 st.dataframe(df_sample.head(10))
 
-st.header("Model Performance")
-# Show graphs and statistics of the model
-st.write("""
-In evaluating the actual model performance, the following metrics would be measured:
-- Accuracy
-- Sensitivity
-- Specificity
-- Area Under ROC Curve (AUC-ROC)
-""")
+# st.header("Model Performance")
+# # Show graphs and statistics of the model
+# st.write("""
+# In evaluating the actual model performance, the following metrics would be measured:
+# - Accuracy
+# - Sensitivity
+# - Specificity
+# """)
 
 # Show simulated graph
 # Create simulated data for graph display

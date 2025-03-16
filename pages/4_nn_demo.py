@@ -5,6 +5,26 @@ import numpy as np
 import pickle
 import os
 
+st.set_page_config(
+    page_title="Neural Network Demo",
+    page_icon="🎯",
+    layout="wide"
+)
+
+# Create navigation menu
+col1, col2, col3, col4, col5 = st.columns(5)
+with col1:
+    st.page_link("app.py", label="🏠 Home")
+with col2:
+    st.page_link("pages/1_ml_explanation.py", label="📚 ML")
+with col3:
+    st.page_link("pages/2_nn_explanation.py", label="🧠 NN")
+with col4:
+    st.page_link("pages/3_ml_demo.py", label="🔬 ML Demo")
+with col5:
+    st.page_link("pages/4_nn_demo.py", label="🎯 NN Demo")
+
+
 # ฟังก์ชันแบ่งข้อมูลแทน train_test_split
 def my_train_test_split(X, y, test_size=0.2, random_state=None):
     if random_state is not None:
@@ -163,7 +183,7 @@ def load_models_and_scaler():
 
 # Main Streamlit app
 def main():
-    st.title("Nvidia Stock Price Prediction")
+    st.title("Neural Network Model Demo")
     
     # Check if models exist, if not train them
     if not os.path.exists('models/random_forest_model.pkl'):

@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.set_page_config(
-    page_title="NN Explanation",
+    page_title="Neural Network Explanation",
     page_icon="🧠",
     layout="wide"
 )
@@ -9,7 +9,7 @@ st.set_page_config(
 # สร้างเมนูนำทาง
 col1, col2, col3, col4, col5 = st.columns(5)
 with col1:
-    st.page_link("app.py", label="🏠 หน้าหลัก")
+    st.page_link("app.py", label="🏠 Home")
 with col2:
     st.page_link("pages/1_ml_explanation.py", label="📚 ML")
 with col3:
